@@ -73,6 +73,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5EBECF58265FA35400641C3E /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		BC01BC57265CD2DA007800F4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +121,7 @@
 		BC654B78265E4DBA00C54301 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EBECF58265FA35400641C3E /* Payment */,
 				BC654B9E265E57FC00C54301 /* Welcome */,
 				BC654B7D265E4DED00C54301 /* Splash */,
 				BC654B7C265E4DE700C54301 /* Login */,

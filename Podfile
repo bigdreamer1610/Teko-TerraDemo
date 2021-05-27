@@ -16,6 +16,10 @@ def janusPods
   pod 'JanusApple', '~> 3.2.3', source: $TekoSpecs
 end
 
+def minervaPods
+  pod 'Minerva', '~> 3.8.2', source: $TekoSpecs 
+end
+
 # bitcode enable
 post_install do |installer|
   installer.pods_project.targets.each do |target|
@@ -43,6 +47,6 @@ target 'TerraFirstHands' do
   use_frameworks!
   terraPods  
   janusPods
-
+  minervaPods
 end
 
