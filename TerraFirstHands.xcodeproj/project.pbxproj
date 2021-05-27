@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBECE85265F762700641C3E /* SplashViewController.swift */; };
+		5EBECED3265F9B5F00641C3E /* TerraService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EBECED2265F9B5F00641C3E /* TerraService-Info.plist */; };
+		9F6DB95A32AD70F5B6A6400C /* Pods_TerraFirstHands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */; };
+		BC01BC64265CD2DB007800F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01BC63265CD2DB007800F4 /* AppDelegate.swift */; };
+		BC01BC6B265CD2DB007800F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC69265CD2DB007800F4 /* Main.storyboard */; };
+		BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC6C265CD2EB007800F4 /* Assets.xcassets */; };
+		BC01BC70265CD2EB007800F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC6E265CD2EB007800F4 /* LaunchScreen.storyboard */; };
+		BC654B7A265E4DD700C54301 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B79265E4DD700C54301 /* LoginViewController.swift */; };
+		BC654B83265E507600C54301 /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B82265E507600C54301 /* SplashProtocols.swift */; };
+		BC654B86265E50CF00C54301 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B85265E50CF00C54301 /* BaseViewController.swift */; };
+		BC654B8C265E512B00C54301 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B8B265E512B00C54301 /* ViewProtocols.swift */; };
+		BC654B8F265E516200C54301 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B8E265E516200C54301 /* AlertUtils.swift */; };
+		BC654B92265E525E00C54301 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B91265E525E00C54301 /* SplashPresenter.swift */; };
+		BC654B96265E538D00C54301 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B95265E538D00C54301 /* App.swift */; };
+		BC654B99265E57BB00C54301 /* SplashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B98265E57BB00C54301 /* SplashModule.swift */; };
+		BC654B9C265E57F000C54301 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC654B9B265E57F000C54301 /* WelcomeViewController.swift */; };
+		BCD63D83265CEF9600A490BE /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD63D82265CEF9600A490BE /* AppRouter.swift */; };
+		BCD63D86265CEFE000A490BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD63D85265CEFE000A490BE /* FirstViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraFirstHands.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E7023141DB6715DD77EBDC /* Pods-TerraFirstHands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraFirstHands.release.xcconfig"; path = "Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands.release.xcconfig"; sourceTree = "<group>"; };
+		5EBECE85265F762700641C3E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5EBECED2265F9B5F00641C3E /* TerraService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TerraService-Info.plist"; sourceTree = "<group>"; };
+		737628476BF8689240F35C7A /* Pods-TerraFirstHands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraFirstHands.debug.xcconfig"; path = "Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands.debug.xcconfig"; sourceTree = "<group>"; };
+		BC01BC60265CD2DB007800F4 /* TerraFirstHands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraFirstHands.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC01BC63265CD2DB007800F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC01BC6A265CD2DB007800F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC01BC6C265CD2EB007800F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC01BC6F265CD2EB007800F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC01BC71265CD2EB007800F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC654B79265E4DD700C54301 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC654B82265E507600C54301 /* SplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
+		BC654B85265E50CF00C54301 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BC654B8B265E512B00C54301 /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		BC654B8E265E516200C54301 /* AlertUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		BC654B91265E525E00C54301 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		BC654B95265E538D00C54301 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		BC654B98265E57BB00C54301 /* SplashModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModule.swift; sourceTree = "<group>"; };
+		BC654B9B265E57F000C54301 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BCD63D82265CEF9600A490BE /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		BCD63D85265CEFE000A490BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC01BC5D265CD2DB007800F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6DB95A32AD70F5B6A6400C /* Pods_TerraFirstHands.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AEDDE3D52E961C69EECB332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				737628476BF8689240F35C7A /* Pods-TerraFirstHands.debug.xcconfig */,
+				50E7023141DB6715DD77EBDC /* Pods-TerraFirstHands.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC01BC57265CD2DA007800F4 = {
+			isa = PBXGroup;
+			children = (
+				BC01BC62265CD2DB007800F4 /* TerraFirstHands */,
+				BC01BC61265CD2DB007800F4 /* Products */,
+				3AEDDE3D52E961C69EECB332 /* Pods */,
+				CFE5CE87E4EB15A1925BA0FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC01BC61265CD2DB007800F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC01BC60265CD2DB007800F4 /* TerraFirstHands.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC01BC62265CD2DB007800F4 /* TerraFirstHands */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B94265E536300C54301 /* Terra */,
+				BC654B8A265E511700C54301 /* Protocols */,
+				BC654B89265E50FE00C54301 /* Extensions */,
+				BC654B88265E50F400C54301 /* Base */,
+				BC654B78265E4DBA00C54301 /* Modules */,
+				BCD63D84265CEFC900A490BE /* Controllers */,
+				BCD63D81265CEF8000A490BE /* Helpers */,
+				BC01BC63265CD2DB007800F4 /* AppDelegate.swift */,
+				BC01BC69265CD2DB007800F4 /* Main.storyboard */,
+				BC01BC6C265CD2EB007800F4 /* Assets.xcassets */,
+				BC01BC6E265CD2EB007800F4 /* LaunchScreen.storyboard */,
+				5EBECED2265F9B5F00641C3E /* TerraService-Info.plist */,
+				BC01BC71265CD2EB007800F4 /* Info.plist */,
+			);
+			path = TerraFirstHands;
+			sourceTree = "<group>";
+		};
+		BC654B78265E4DBA00C54301 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B9E265E57FC00C54301 /* Welcome */,
+				BC654B7D265E4DED00C54301 /* Splash */,
+				BC654B7C265E4DE700C54301 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC654B7C265E4DE700C54301 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B79265E4DD700C54301 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BC654B7D265E4DED00C54301 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B82265E507600C54301 /* SplashProtocols.swift */,
+				BC654B91265E525E00C54301 /* SplashPresenter.swift */,
+				BC654B98265E57BB00C54301 /* SplashModule.swift */,
+				5EBECE85265F762700641C3E /* SplashViewController.swift */,
+			);
+			name = Splash;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		BC654B88265E50F400C54301 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B85265E50CF00C54301 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BC654B89265E50FE00C54301 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC654B8A265E511700C54301 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B8B265E512B00C54301 /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC654B94265E536300C54301 /* Terra */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B95265E538D00C54301 /* App.swift */,
+			);
+			path = Terra;
+			sourceTree = "<group>";
+		};
+		BC654B9E265E57FC00C54301 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BC654B9B265E57F000C54301 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BCD63D81265CEF8000A490BE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCD63D82265CEF9600A490BE /* AppRouter.swift */,
+				BC654B8E265E516200C54301 /* AlertUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BCD63D84265CEFC900A490BE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCD63D85265CEFE000A490BE /* FirstViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFE5CE87E4EB15A1925BA0FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC01BC5F265CD2DB007800F4 /* TerraFirstHands */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC01BC74265CD2EB007800F4 /* Build configuration list for PBXNativeTarget "TerraFirstHands" */;
+			buildPhases = (
+				05045E144EACA451E9754E48 /* [CP] Check Pods Manifest.lock */,
+				BC01BC5C265CD2DB007800F4 /* Sources */,
+				BC01BC5D265CD2DB007800F4 /* Frameworks */,
+				BC01BC5E265CD2DB007800F4 /* Resources */,
+				61D50D299FBB786FAD466BD4 /* [CP] Embed Pods Frameworks */,
+				946D5BC21A4FE361EE716A5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TerraFirstHands;
+			productName = TerraFirstHands;
+			productReference = BC01BC60265CD2DB007800F4 /* TerraFirstHands.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC01BC58265CD2DA007800F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BC01BC5F265CD2DB007800F4 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = BC01BC5B265CD2DA007800F4 /* Build configuration list for PBXProject "TerraFirstHands" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC01BC57265CD2DA007800F4;
+			productRefGroup = BC01BC61265CD2DB007800F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC01BC5F265CD2DB007800F4 /* TerraFirstHands */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC01BC5E265CD2DB007800F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC01BC70265CD2EB007800F4 /* LaunchScreen.storyboard in Resources */,
+				5EBECED3265F9B5F00641C3E /* TerraService-Info.plist in Resources */,
+				BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */,
+				BC01BC6B265CD2DB007800F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05045E144EACA451E9754E48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TerraFirstHands-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61D50D299FBB786FAD466BD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946D5BC21A4FE361EE716A5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC01BC5C265CD2DB007800F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC654B83265E507600C54301 /* SplashProtocols.swift in Sources */,
+				BC654B92265E525E00C54301 /* SplashPresenter.swift in Sources */,
+				BC654B96265E538D00C54301 /* App.swift in Sources */,
+				BC654B7A265E4DD700C54301 /* LoginViewController.swift in Sources */,
+				BCD63D86265CEFE000A490BE /* FirstViewController.swift in Sources */,
+				5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */,
+				BC654B9C265E57F000C54301 /* WelcomeViewController.swift in Sources */,
+				BC654B99265E57BB00C54301 /* SplashModule.swift in Sources */,
+				BCD63D83265CEF9600A490BE /* AppRouter.swift in Sources */,
+				BC654B8F265E516200C54301 /* AlertUtils.swift in Sources */,
+				BC654B86265E50CF00C54301 /* BaseViewController.swift in Sources */,
+				BC654B8C265E512B00C54301 /* ViewProtocols.swift in Sources */,
+				BC01BC64265CD2DB007800F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC01BC69265CD2DB007800F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC01BC6A265CD2DB007800F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC01BC6E265CD2EB007800F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC01BC6F265CD2EB007800F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC01BC72265CD2EB007800F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC01BC73265CD2EB007800F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC01BC75265CD2EB007800F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737628476BF8689240F35C7A /* Pods-TerraFirstHands.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8J9GKDJ8T;
+				INFOPLIST_FILE = TerraFirstHands/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.teko.ios.vnsmix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC01BC76265CD2EB007800F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50E7023141DB6715DD77EBDC /* Pods-TerraFirstHands.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8J9GKDJ8T;
+				INFOPLIST_FILE = TerraFirstHands/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vn.teko.ios.vnsmix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC01BC5B265CD2DA007800F4 /* Build configuration list for PBXProject "TerraFirstHands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01BC72265CD2EB007800F4 /* Debug */,
+				BC01BC73265CD2EB007800F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC01BC74265CD2EB007800F4 /* Build configuration list for PBXNativeTarget "TerraFirstHands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01BC75265CD2EB007800F4 /* Debug */,
+				BC01BC76265CD2EB007800F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC01BC58265CD2DA007800F4 /* Project object */;
+}

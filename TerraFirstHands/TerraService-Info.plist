@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>TerraClientID</key>
+    <string>vnsmix:ios:appstore:1.2.2</string>
+    <key>TerraEnvironment</key>
+    <string>dev</string>
+    <key>DefaultConfig</key>
+    <dict>
+      <key>@type</key>
+      <string>type.googleapis.com/terra.v1.Pandora</string>
+      <key>Config</key>
+      <string>TLkzpyn80qUHViucAEsX5zbRV6BPYPEWhRpPQstaOdz2hUx2m+cL+0mCxYvuspBXNmVL0uQUQeRVCpjdcUpKTr7uFfKOgQmfGn2oM6Si0Q==</string>
+      <key>Services</key>
+      <array>
+        <dict>
+          <key>Name</key>
+          <string>IAM</string>
+          <key>Code</key>
+          <string>iam</string>
+          <key>Config</key>
+          <string>4O+fzYLwwCCuZYAFUwTQAXjMgpOrRcD6QPKC0rVKYHHYoihQM01Lkoia6B5algpaGOCW4KQglrGwOTRsesdDSxXNhV3Dx/NsL7EE2/GZqLbtFvxTJ1NZdcM4vcHNnRHQF3+ZXdUJTx8OCr4ESX0Ac39NC7Pj3+BIpO3aq1GPZ+sRAQ1IRz3bDPZd08xCSQexdIkI07Le3E7beRsVp2XTRuI5Zcw30XqNyG5W1IuvYaOJ6J36Hujm9ZpyasWQUcRQTxX6eXhqh89bjPoZQeloex5pv+JWpvfzQrNp7vGjCVdlnfj1J5Nc4f3fPTROrRJHStDT+5DOgsmMm4C+Xcz7jru6Lyh6umzg428mjWE2NJZrQXZTUAe1pPNgKmWYltc0bJfgrm3aNr8UarloINickC3A0ISdyg6Kt4S9jNFKiULdDPURhA9tOtyzb/lddpszPtxem0dFqNrC4UhWE1l9mS7NTOlxMqB1txHmoNumZ21fIL1K3oX3PC3EhAwmWIDXU/yjCCYzjbGk9lAF68XUC11+tGriXg588X7YhoZS56PETwdKWw5GUmyqnK39cLQxo4hlgsrQb4LUxCvljPTyOTN2p/OK95UJr8E2pFwV2Tylq6/kTsvrYDAV/A9S7bz983/1iN6uLBm3Tas/4vCXv00MxDmsusy8XCKHgAwghMBhxkM3OyxPoy0s3/0V/l2cFAjqCeAkV/ec6aMcbg8tfT45e9Uj9248rBAHBqhW7MKiM5PpiUvB9ZivC9VEpHQxckIIrP2tK7Cvj52Ouhm/awtO3zOtcTlgyqxKXgBhuICD0udHH7Cy0/1c1NhYopV0RKg2Eag9iLuQ8Sm7Im+hoNcUdCtRNC40ysHrSr+IbSmrUfWHPbXj9GvBlGt2olLu2UqfSzHI2ceDz1vnDqDiulquJcD1KKkiJTa8QhPSof1h0b3drsrs/U7nEtbcsP5x7UwPj4QbxTRb0UuXBB1nJQxZMX9PUsa2EJr3tGsNsw==</string>
+        </dict>
+        <dict>
+          <key>Name</key>
+          <string>Payment</string>
+          <key>Code</key>
+          <string>ps</string>
+          <key>Config</key>
+          <string>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</string>
+        </dict>
+        <dict>
+          <key>Name</key>
+          <string>Loyalty</string>
+          <key>Code</key>
+          <string>loyalty</string>
+          <key>Config</key>
+          <string>iTdKRB+MHColqpkqnnDi7m3S+KHwGtlBVXjTfw26/UE2Ss5J7SPRsFF9u0gaj5msjq1Akej6vOnT0We72RZvjkxsFQ79WZU24XPo1dPH8igHXdPZZ4iYEiarluyJtrv+1Wln7QGrahET5aOK29bgjmWpy/gIWDMpgzqwkxkmG/PNFxkOfglqxi+y803Pxvk5p7+gyQw323BlyMmY6Bdqrvp5E3t4QDkJi2KhsXcTkqaDX+DDwlG/KKf5L0Gxw+WpaUESACwF0PFmYD6iEqji/4TVy81gbkN5jWoiP0WvzLalrIXGBDYP8WBJdmwlpFGukha26aQ9RsIRIh8z</string>
+        </dict>
+      </array>
+    </dict>
+  </dict>
+</plist>
