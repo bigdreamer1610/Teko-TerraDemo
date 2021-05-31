@@ -18,6 +18,7 @@ end
 
 def minervaPods
   pod 'Minerva', '~> 3.8.2', source: $TekoSpecs 
+  pod 'MinervaUI', '~> 3.8.2', source: $TekoSpecs 
 end
 
 # bitcode enable
@@ -48,5 +49,7 @@ target 'TerraFirstHands' do
   terraPods  
   janusPods
   minervaPods
+  pod 'DropDown'
+  pod 'LoyaltyCore'
 end
 

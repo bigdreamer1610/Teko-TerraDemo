@@ -12,6 +12,8 @@ enum RouterType {
     case splash(dismissHandler: () -> Void)
     case login
     case welcome
+    case pay
+    case loyalty
 }
 
 extension RouterType {
@@ -34,6 +36,17 @@ extension RouterType {
                 return UIViewController()
             }
             return vc
+        case .pay:
+            guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PaymentViewController") as? PaymentViewController else {
+                return UIViewController()
+            }
+            return vc
+        case .loyalty:
+            guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoyaltyViewController") as? LoyaltyViewController else {
+                return UIViewController()
+            }
+            return vc
+            
         }
     }
 }

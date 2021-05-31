@@ -9,6 +9,7 @@ import UIKit
 import Terra
 import Janus
 import JanusGoogle
+import LoyaltyCore
 
 public var terraApp: ITerraApp = TerraInstanceCenter.shared.terraApp
 

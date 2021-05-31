@@ -46,6 +46,8 @@ extension LoginViewController : JanusLoginDelegate {
     func janusHasLoginSuccess(authCredential: JanusAuthCredential) {
         print("success")
         print("auth credential: \(authCredential.accessToken)")
+        let vc = RouterType.pay.getVc()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func janusHasLoginFail(error: JanusError?) {

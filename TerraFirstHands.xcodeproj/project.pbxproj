@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBECE85265F762700641C3E /* SplashViewController.swift */; };
 		5EBECED3265F9B5F00641C3E /* TerraService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EBECED2265F9B5F00641C3E /* TerraService-Info.plist */; };
+		5EFC19D52660C3730027B347 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC19D42660C3730027B347 /* PaymentViewController.swift */; };
+		5EFC1A142660C5D80027B347 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC1A132660C5D80027B347 /* Payment.swift */; };
+		5EFC1A182660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC1A172660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle */; };
+		5EFC1A552660EB450027B347 /* LoyaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC1A542660EB450027B347 /* LoyaltyViewController.swift */; };
 		9F6DB95A32AD70F5B6A6400C /* Pods_TerraFirstHands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */; };
 		BC01BC64265CD2DB007800F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01BC63265CD2DB007800F4 /* AppDelegate.swift */; };
 		BC01BC6B265CD2DB007800F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC69265CD2DB007800F4 /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		50E7023141DB6715DD77EBDC /* Pods-TerraFirstHands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraFirstHands.release.xcconfig"; path = "Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands.release.xcconfig"; sourceTree = "<group>"; };
 		5EBECE85265F762700641C3E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5EBECED2265F9B5F00641C3E /* TerraService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TerraService-Info.plist"; sourceTree = "<group>"; };
+		5EFC19D42660C3730027B347 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		5EFC1A132660C5D80027B347 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		5EFC1A172660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VnpayWalletSDKBundleResouce.bundle; sourceTree = "<group>"; };
+		5EFC1A542660EB450027B347 /* LoyaltyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyViewController.swift; sourceTree = "<group>"; };
 		737628476BF8689240F35C7A /* Pods-TerraFirstHands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraFirstHands.debug.xcconfig"; path = "Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands.debug.xcconfig"; sourceTree = "<group>"; };
 		BC01BC60265CD2DB007800F4 /* TerraFirstHands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraFirstHands.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC01BC63265CD2DB007800F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,8 +84,33 @@
 		5EBECF58265FA35400641C3E /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				5EFC19D42660C3730027B347 /* PaymentViewController.swift */,
 			);
 			path = Payment;
+			sourceTree = "<group>";
+		};
+		5EFC1A102660C5C70027B347 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5EFC1A132660C5D80027B347 /* Payment.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		5EFC1A162660E3050027B347 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				5EFC1A172660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		5EFC1A532660EB380027B347 /* Loyalty */ = {
+			isa = PBXGroup;
+			children = (
+				5EFC1A542660EB450027B347 /* LoyaltyViewController.swift */,
+			);
+			path = Loyalty;
 			sourceTree = "<group>";
 		};
 		BC01BC57265CD2DA007800F4 = {
@@ -101,6 +134,8 @@
 		BC01BC62265CD2DB007800F4 /* TerraFirstHands */ = {
 			isa = PBXGroup;
 			children = (
+				5EFC1A162660E3050027B347 /* Libs */,
+				5EFC1A102660C5C70027B347 /* DataLayer */,
 				BC654B94265E536300C54301 /* Terra */,
 				BC654B8A265E511700C54301 /* Protocols */,
 				BC654B89265E50FE00C54301 /* Extensions */,
@@ -121,6 +156,7 @@
 		BC654B78265E4DBA00C54301 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EFC1A532660EB380027B347 /* Loyalty */,
 				5EBECF58265FA35400641C3E /* Payment */,
 				BC654B9E265E57FC00C54301 /* Welcome */,
 				BC654B7D265E4DED00C54301 /* Splash */,
@@ -273,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFC1A182660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle in Resources */,
 				BC01BC70265CD2EB007800F4 /* LaunchScreen.storyboard in Resources */,
 				5EBECED3265F9B5F00641C3E /* TerraService-Info.plist in Resources */,
 				BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */,
@@ -349,10 +386,13 @@
 				BC654B83265E507600C54301 /* SplashProtocols.swift in Sources */,
 				BC654B92265E525E00C54301 /* SplashPresenter.swift in Sources */,
 				BC654B96265E538D00C54301 /* App.swift in Sources */,
+				5EFC1A552660EB450027B347 /* LoyaltyViewController.swift in Sources */,
 				BC654B7A265E4DD700C54301 /* LoginViewController.swift in Sources */,
+				5EFC1A142660C5D80027B347 /* Payment.swift in Sources */,
 				BCD63D86265CEFE000A490BE /* FirstViewController.swift in Sources */,
 				5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */,
 				BC654B9C265E57F000C54301 /* WelcomeViewController.swift in Sources */,
+				5EFC19D52660C3730027B347 /* PaymentViewController.swift in Sources */,
 				BC654B99265E57BB00C54301 /* SplashModule.swift in Sources */,
 				BCD63D83265CEF9600A490BE /* AppRouter.swift in Sources */,
 				BC654B8F265E516200C54301 /* AlertUtils.swift in Sources */,

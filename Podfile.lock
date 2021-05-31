@@ -213,6 +213,13 @@ PODS:
     - abseil/base/config
     - abseil/meta/type_traits
   - Alamofire (5.3.0)
+  - Apollo (0.4.26):
+    - Kingfisher (~> 6.0)
+  - ApolloTheme (0.0.2):
+    - Apollo (~> 0.4.12)
+    - Logging
+    - TekCoreService
+    - TerraInstancesManager (~> 1.2.16)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
@@ -227,6 +234,7 @@ PODS:
   - BoringSSL-GRPC/Interface (0.0.7)
   - Codextended (0.3.0)
   - CryptoSwift (1.3.8)
+  - DropDown (2.3.13)
   - FacebookCore (0.9.0):
     - FBSDKCoreKit (~> 5.0)
   - FacebookLogin (0.9.0):
@@ -276,6 +284,7 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 1.30905.0)
+  - FittedSheets (1.4.6)
   - GoogleDataTransport (7.2.0):
     - nanopb (~> 1.30905.0)
   - GoogleSignIn (5.0.2):
@@ -314,7 +323,7 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.5.0)
-  - Janus (3.2.1):
+  - Janus (3.2.3):
     - SwiftyJSON (~> 4.0)
     - TekCoreService (~> 1.2.11)
     - TerraInstancesManager (~> 1.2.17)
@@ -329,11 +338,19 @@ PODS:
   - JanusGoogle (3.2.3):
     - GoogleSignIn (~> 5.0.2)
     - Janus (~> 3.2.1)
+  - Kingfisher (6.3.0)
   - leveldb-library (1.22.1)
   - Logging (1.4.0)
-  - LoyaltyCore (0.1.23):
+  - LoyaltyComponent (0.1.26):
+    - Apollo
+    - ApolloTheme (~> 0.0.1)
+    - FittedSheets (~> 1.4.6)
+    - Kingfisher
+    - LoyaltyModel (~> 0.1.23)
+    - TerraInstancesManager
+  - LoyaltyCore (0.1.25):
     - Logging
-    - LoyaltyModel (~> 0.1.15)
+    - LoyaltyModel (~> 0.1.23)
     - TekCoreNetwork
     - TekCoreService
     - Terra (~> 2.5.3)
@@ -350,12 +367,25 @@ PODS:
     - TekCoreService (~> 1.2.11)
     - TerraInstancesManager (~> 1.2.17)
     - Toast-Swift (~> 5.0.0)
+  - MinervaUI (3.8.9):
+    - Apollo (~> 0.4.3)
+    - FittedSheets
+    - Kingfisher (~> 6.0)
+    - LoyaltyComponent (~> 0.1.23)
+    - LoyaltyCore (~> 0.1.23)
+    - Minerva (~> 3.8.2)
+    - SnapKit
+    - SVProgressHUD
+    - Toast-Swift (~> 5.0.0)
+    - VnpayWalletSDK (~> 1.0.2)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.12)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
   - SwiftyJSON (4.3.0)
   - TekCoreNetwork (1.2.27):
     - Alamofire (~> 5.3.0)
@@ -370,28 +400,43 @@ PODS:
     - Logging
     - TekCoreService (~> 1.2.2)
   - Toast-Swift (5.0.1)
+  - VNPayCore (1.0.0)
+  - VNPAYKitLib (1.0.0)
+  - VnpayWalletSDK (1.0.2):
+    - VNPayCore
+    - VNPAYKitLib
 
 DEPENDENCIES:
+  - DropDown
   - Janus (~> 3.2.1)
   - JanusApple (~> 3.2.3)
   - JanusFacebook (~> 3.2.3)
   - JanusGoogle (~> 3.2.3)
+  - LoyaltyCore
   - Minerva (~> 3.8.2)
+  - MinervaUI (~> 3.8.2)
   - Terra (~> 2.5.3)
 
 SPEC REPOS:
   "https://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@github.com/teko-vn/Specs-ios.git":
+    - Apollo
+    - ApolloTheme
     - Janus
     - JanusApple
     - JanusFacebook
     - JanusGoogle
+    - LoyaltyComponent
     - LoyaltyCore
     - LoyaltyModel
     - Minerva
+    - MinervaUI
     - TekCoreNetwork
     - TekCoreService
     - Terra
     - TerraInstancesManager
+    - VNPayCore
+    - VNPAYKitLib
+    - VnpayWalletSDK
   https://github.com/CocoaPods/Specs.git:
     - abseil
     - Alamofire
@@ -400,6 +445,7 @@ SPEC REPOS:
     - BoringSSL-GRPC
     - Codextended
     - CryptoSwift
+    - DropDown
     - FacebookCore
     - FacebookLogin
     - FacebookShare
@@ -411,6 +457,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
+    - FittedSheets
     - GoogleDataTransport
     - GoogleSignIn
     - GoogleUtilities
@@ -418,21 +465,27 @@ SPEC REPOS:
     - gRPC-Core
     - GTMAppAuth
     - GTMSessionFetcher
+    - Kingfisher
     - leveldb-library
     - Logging
     - nanopb
     - PromisesObjC
+    - SnapKit
+    - SVProgressHUD
     - SwiftyJSON
     - Toast-Swift
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  Apollo: 7471a07d2be30fc1a9dc125d46b0e36c91303939
+  ApolloTheme: 10167f711d36ef17d58e452baeda51738acb1213
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BerTlv: c94b89a7b93bf8c1881691a8d105ec87a4a10759
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Codextended: f384271b8694376ad766ddbf2a011efbfdcee905
   CryptoSwift: 01b0f0cba1d5c212e5a335ff6c054fb75a204f00
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
   FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
   FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
@@ -444,6 +497,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: 7535fe695737f8c5b350584292a70b7f8ff0357b
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
   FirebaseFirestore: 8c158bdde010fa397386333a74570eaef033e62d
+  FittedSheets: 7f37fee2567d15dcde391f31eccbffb660ddebf0
   GoogleDataTransport: 672fb0ce96fe7f7f31d43672fca62ad2c9c86f7b
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
@@ -451,24 +505,32 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
-  Janus: 61ef08c73a8a1abe0adcf9b04f5187c68d82b48e
+  Janus: 435125e43b47b672ad29070d47997eab2e9255e8
   JanusApple: edec2c289890ac34815d6071d466f7c64fdd8100
   JanusFacebook: 0596f965e1f4b8cd17c740c68536a4518d77a6c8
   JanusGoogle: 5b44e73db9a3283c50e7a16ff1b04a5f9c0b38bd
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
-  LoyaltyCore: b3c35fc9ba2d9a734678935cb7f8f42fe885483c
+  LoyaltyComponent: 330012c96aa9a794a83d14b3044419e80dd04103
+  LoyaltyCore: 86e28daaf62743a6bac54b8a966c6e9da539b837
   LoyaltyModel: 57e31fbe01472692b2f788707526fe45b334672b
   Minerva: 8605ca7b648e37ab6082ce3513c08c3a0408fc12
+  MinervaUI: 7af678022e325e4f8a6b655772b726372cfa38ab
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TekCoreNetwork: 2001cb5abeb1d40e3051ae993bd8fe8f6b475ed2
   TekCoreService: ccc87195789e0ec4b0bddaba3f570ff10663e36f
   Terra: 128a11da3ac725d1e4af3b050c49df226666225b
   TerraInstancesManager: 33f4e678c2ec0408654053100eedaa663be79114
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  VNPayCore: a10fd10ea772a210867d820a0708ac95b1ce2516
+  VNPAYKitLib: 606b4dec63afc924aefa7630d66ca0387a018fec
+  VnpayWalletSDK: 5b65cbaef8cbde8285cec618f59bd91c68fb19bf
 
-PODFILE CHECKSUM: 7f3b3da21afee96116e6a78306ae2ab241bf29f6
+PODFILE CHECKSUM: 25488abc23216c457de03f042a7a81a6ee5a5bde
 
 COCOAPODS: 1.10.1
