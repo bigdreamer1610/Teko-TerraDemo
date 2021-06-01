@@ -9,10 +9,10 @@ import UIKit
 import MinervaUI
 import Minerva
 import DropDown
+import TekoTracker
 
 class PaymentViewController: PaymentBaseViewController {
 
-    
     @IBOutlet weak var btnPaymentMethod: UIButton!
     @IBOutlet weak var tfPaymenyMethod: UITextField!
     @IBOutlet weak var switchShowResult: UISwitch!
@@ -27,6 +27,7 @@ class PaymentViewController: PaymentBaseViewController {
     
     //variables
     lazy var methods: [PaymentMethod] = PaymentMethod.allCases
+    //var trackerMethod: TekoTracker.PaymentMethod = .
     
     var selectedMethod: PaymentMethod = .none {
         didSet {
@@ -180,6 +181,8 @@ class PaymentViewController: PaymentBaseViewController {
         default:
             processPaymentFtLoyalty()
         }
+        
+        
     }
     
     @IBAction func clickLoyalty(_ sender: Any) {
@@ -194,14 +197,56 @@ extension PaymentViewController : AIOPaymentUIDelegate {
     func onPaymentResult(_ result: AIOPaymentResult) {
         switch result {
         case .success(let transactionResult):
-            AlertUtils.showAlert(from: self, with: "Success", message: "Payment.success with request: \(transactionResult.requestId)")
+            AlertUtils.showAlert(from: self,
+                                 with: "Success",
+                                 message: "Payment.success with request: \(transactionResult.requestId)")
+            transactionResult.transactions.forEach { (transaction) in
+                TerraTracker.getInstance(by: terraApp)?.sendPaymentEvent(
+                    data: PaymentEventData(
+                        orderID: transaction.transactionCode,
+                        referral: nil,
+                        amount: transaction.amount,
+                        paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name)!,
+                        status: EcommerceEventStatus.success))
+            }
+            // ?
+            
+//            transactionResult.transactions.forEach { transaction in
+//                
+//                TerraTracker.getInstance(by: terraApp)?.sendPaymentEvent(
+//                    data: PaymentEventData(
+//                        orderID: transactionResult.orderCode,
+//                        referral: nil,
+//                        amount: transactionResult.amount,
+//                        paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name),
+//                        status: EcommerceEventStatus.success)
+//                )
+//
+//            }
+            
         case .failure(let error, let transactionResult):
             if let transactionResult = transactionResult {
-                AlertUtils.showAlert(from: self, with: "Failure", message: String(describing: error) + ":\n" + String(describing: transactionResult))
-                print(String(describing: transactionResult.transactions))
+                AlertUtils.showAlert(from: self,
+                                     with: "Failure",
+                                     message: String(describing: error) + ":\n" + String(describing: transactionResult))
+                // ?
+                transactionResult.transactions.forEach { (transaction) in
+                    TerraTracker.getInstance(by: terraApp)?.sendPaymentEvent(
+                        data: PaymentEventData(
+                            orderID: transactionResult.orderCode,
+                            referral: nil,
+                            amount: transaction.amount,
+                            paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name)!,
+                            status: EcommerceEventStatus.failed))
+                }
+//                transactionResult.transactions.forEach { (transaction) in
+////                    if transaction.
+//                }
             } else {
                 AlertUtils.showAlert(from: self, with: "Failure", message: String(describing: error))
             }
+            
+            
         @unknown default:
             ()
         }

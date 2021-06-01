@@ -8,6 +8,11 @@ def terraPods
   pod 'Terra', '~> 2.5.3', source: $TekoSpecs
 end
 
+def userPods 
+  pod 'TekIdentityService'
+  pod 'TekUserService'
+end
+
 def janusPods
   pod 'Janus', '~> 3.2.1'
   pod 'JanusFacebook', '~> 3.2.3', source: $TekoSpecs
@@ -19,6 +24,15 @@ end
 def minervaPods
   pod 'Minerva', '~> 3.8.2', source: $TekoSpecs 
   pod 'MinervaUI', '~> 3.8.2', source: $TekoSpecs 
+end
+
+def apolloPods
+  pod 'Apollo', '~> 0.4.22', :source => $TekoSpecs
+  pod 'ApolloTheme', '~> 0.0.2'
+end
+
+def trackPods
+  pod 'TekoTracker', '~> 0.7.5', :source => $TekoSpecs
 end
 
 # bitcode enable
@@ -46,10 +60,16 @@ end
 
 target 'TerraFirstHands' do
   use_frameworks!
+  userPods
   terraPods  
   janusPods
   minervaPods
+  trackPods
+  apolloPods
   pod 'DropDown'
   pod 'LoyaltyCore'
+  pod 'LoyaltyConsumer'
+  pod 'LoyaltyConsumerUI'
+pod ‘IQKeyboardManagerSwift’
 end
 

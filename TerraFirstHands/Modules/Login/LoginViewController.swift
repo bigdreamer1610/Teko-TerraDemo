@@ -12,6 +12,8 @@ import JanusFacebook
 import JanusApple
 
 class LoginViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,17 @@ class LoginViewController: UIViewController {
     
     func setUp() {
         SplashModule.show(onViewController: self) {[weak self] in
-            guard let `self` = self else {return}
             print("Terra App is loaded successfully")
-            
         }
+        
+        if let _ = UserDefaults.standard.string(forKey: "token") {
+            next()
+        }
+    }
+    
+    func next() {
+        let vc = RouterType.pay.getVc()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction func clickLogin(_ sender: Any) {
@@ -44,14 +53,11 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController : JanusLoginDelegate {
     func janusHasLoginSuccess(authCredential: JanusAuthCredential) {
-        print("success")
-        print("auth credential: \(authCredential.accessToken)")
-        let vc = RouterType.pay.getVc()
-        self.navigationController?.pushViewController(vc, animated: true)
+        defaults.setValue(authCredential.accessToken, forKey: "token")
+        next()
     }
     
     func janusHasLoginFail(error: JanusError?) {
-        print("fail")
         print("fail: \(error?.localizedDescription)")
     }
 }
