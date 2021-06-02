@@ -209,21 +209,6 @@ extension PaymentViewController : AIOPaymentUIDelegate {
                         paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name)!,
                         status: EcommerceEventStatus.success))
             }
-            // ?
-            
-//            transactionResult.transactions.forEach { transaction in
-//                
-//                TerraTracker.getInstance(by: terraApp)?.sendPaymentEvent(
-//                    data: PaymentEventData(
-//                        orderID: transactionResult.orderCode,
-//                        referral: nil,
-//                        amount: transactionResult.amount,
-//                        paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name),
-//                        status: EcommerceEventStatus.success)
-//                )
-//
-//            }
-            
         case .failure(let error, let transactionResult):
             if let transactionResult = transactionResult {
                 AlertUtils.showAlert(from: self,
@@ -237,13 +222,11 @@ extension PaymentViewController : AIOPaymentUIDelegate {
                             referral: nil,
                             amount: transaction.amount,
                             paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name)!,
-                            status: EcommerceEventStatus.failed))
+                            status: transaction.error == nil ? EcommerceEventStatus.success : EcommerceEventStatus.failed))
                 }
-//                transactionResult.transactions.forEach { (transaction) in
-////                    if transaction.
-//                }
             } else {
                 AlertUtils.showAlert(from: self, with: "Failure", message: String(describing: error))
+                TerraTracker.getInstance(by: terraApp)?.sendErrorEvent(data: ErrorEventData(errorSource: ErrorSource.http, apiCall: "post", apiPayload: nil, httpResponseCode: (error.asAFError?.responseCode)!, errorCode: "404", errorMessage: error.localizedDescription))
             }
             
             

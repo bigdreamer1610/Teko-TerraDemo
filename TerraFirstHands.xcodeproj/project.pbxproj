@@ -11,7 +11,6 @@
 		5E410B052664BC960003F8C0 /* VerifyPhonenumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E410B042664BC960003F8C0 /* VerifyPhonenumberViewController.swift */; };
 		5E410B552664F2040003F8C0 /* MemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E410B542664F2040003F8C0 /* MemberInfoViewController.swift */; };
 		5E76FC1226660DFA00BD5B0A /* LoyaltyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76FC1126660DFA00BD5B0A /* LoyaltyInfoViewController.swift */; };
-		5E76FC5D2666175200BD5B0A /* TerraService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E76FC5C2666175200BD5B0A /* TerraService-Info.plist */; };
 		5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBECE85265F762700641C3E /* SplashViewController.swift */; };
 		5EFC19D52660C3730027B347 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC19D42660C3730027B347 /* PaymentViewController.swift */; };
 		5EFC1A142660C5D80027B347 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC1A132660C5D80027B347 /* Payment.swift */; };
@@ -42,7 +41,6 @@
 		5E410B042664BC960003F8C0 /* VerifyPhonenumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhonenumberViewController.swift; sourceTree = "<group>"; };
 		5E410B542664F2040003F8C0 /* MemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoViewController.swift; sourceTree = "<group>"; };
 		5E76FC1126660DFA00BD5B0A /* LoyaltyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyInfoViewController.swift; sourceTree = "<group>"; };
-		5E76FC5C2666175200BD5B0A /* TerraService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TerraService-Info.plist"; sourceTree = "<group>"; };
 		5EBECE85265F762700641C3E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5EFC19D42660C3730027B347 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		5EFC1A132660C5D80027B347 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				BC01BC69265CD2DB007800F4 /* Main.storyboard */,
 				BC01BC6C265CD2EB007800F4 /* Assets.xcassets */,
 				BC01BC6E265CD2EB007800F4 /* LaunchScreen.storyboard */,
-				5E76FC5C2666175200BD5B0A /* TerraService-Info.plist */,
 				BC01BC71265CD2EB007800F4 /* Info.plist */,
 			);
 			path = TerraFirstHands;
@@ -337,7 +334,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E76FC5D2666175200BD5B0A /* TerraService-Info.plist in Resources */,
 				5EFC1A182660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle in Resources */,
 				BC01BC70265CD2EB007800F4 /* LaunchScreen.storyboard in Resources */,
 				BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */,
