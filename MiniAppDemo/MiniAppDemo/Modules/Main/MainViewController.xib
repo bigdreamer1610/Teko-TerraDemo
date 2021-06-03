@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MiniAppDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="amountTextField" destination="ETw-78-91I" id="ybr-6B-VVr"/>
+                <outlet property="orderCodeTextField" destination="Q2B-no-vKe" id="xgq-ur-ZW8"/>
+                <outlet property="view" destination="JAO-re-1KV" id="sp7-ZR-6wQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JAO-re-1KV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AY4-l8-kxe">
+                    <rect key="frame" x="44" y="268" width="326" height="290"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mã đơn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2B-no-vKe">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="jWj-KH-PZA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Số tiền" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ETw-78-91I">
+                            <rect key="frame" x="0.0" y="56" width="326" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Ed8-t1-r2Z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12g-ha-8i6">
+                            <rect key="frame" x="0.0" y="112" width="326" height="10"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="I9K-dP-lVc"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcl-6I-14a">
+                            <rect key="frame" x="0.0" y="134" width="326" height="44"/>
+                            <color key="backgroundColor" red="0.066666666669999999" green="0.5568627451" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="YI8-yJ-VTB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Thanh toán">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="paymentButtonWasTapped:" destination="-1" eventType="touchUpInside" id="cAS-gk-f0t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-Ki-9TA">
+                            <rect key="frame" x="0.0" y="190" width="326" height="44"/>
+                            <color key="backgroundColor" red="0.066666666669999999" green="0.5568627451" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="9KF-dB-fQk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Thanh toán QR xuôi">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="paymentQRCodeButtonWasTapped:" destination="-1" eventType="touchUpInside" id="Nyp-Sk-JLl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISa-6F-4TX">
+                            <rect key="frame" x="0.0" y="246" width="326" height="44"/>
+                            <color key="backgroundColor" red="0.066666666669999999" green="0.5568627451" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="k6W-HM-CpC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="Thanh toán QR ngược">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="paymentQRReversalButtonWasTapped:" destination="-1" eventType="touchUpInside" id="pkE-0T-Izc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-k1-eA0">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqI-Iy-JuO">
+                            <rect key="frame" x="6" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="YqI-Iy-JuO" secondAttribute="height" multiplier="1:1" id="U5e-Xh-vCO"/>
+                                <constraint firstAttribute="height" constant="44" id="m8p-Rr-J7p"/>
+                            </constraints>
+                            <state key="normal" image="ic_back"/>
+                            <connections>
+                                <action selector="backButtonWasTapped:" destination="-1" eventType="touchUpInside" id="0TL-q1-Tr2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mini native-app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02E-O5-Fd3">
+                            <rect key="frame" x="146.5" y="12" width="121" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="13k-h9-nMS"/>
+                        <constraint firstItem="YqI-Iy-JuO" firstAttribute="leading" secondItem="cPk-k1-eA0" secondAttribute="leading" constant="6" id="1GN-1C-Jbv"/>
+                        <constraint firstItem="02E-O5-Fd3" firstAttribute="centerX" secondItem="cPk-k1-eA0" secondAttribute="centerX" id="MsT-rJ-jzx"/>
+                        <constraint firstItem="02E-O5-Fd3" firstAttribute="centerY" secondItem="cPk-k1-eA0" secondAttribute="centerY" id="SHb-Vn-r9Z"/>
+                        <constraint firstItem="YqI-Iy-JuO" firstAttribute="centerY" secondItem="cPk-k1-eA0" secondAttribute="centerY" id="hRL-my-n2j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6eh-bA-tAh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AY4-l8-kxe" firstAttribute="centerY" secondItem="6eh-bA-tAh" secondAttribute="centerY" constant="-40" id="1IB-YS-Ged"/>
+                <constraint firstItem="6eh-bA-tAh" firstAttribute="trailing" secondItem="cPk-k1-eA0" secondAttribute="trailing" id="DP5-HQ-uib"/>
+                <constraint firstItem="cPk-k1-eA0" firstAttribute="leading" secondItem="6eh-bA-tAh" secondAttribute="leading" id="MSG-Iq-e55"/>
+                <constraint firstItem="AY4-l8-kxe" firstAttribute="centerX" secondItem="6eh-bA-tAh" secondAttribute="centerX" id="Nye-V8-PV8"/>
+                <constraint firstItem="cPk-k1-eA0" firstAttribute="top" secondItem="6eh-bA-tAh" secondAttribute="top" id="YTx-sq-B50"/>
+                <constraint firstItem="AY4-l8-kxe" firstAttribute="leading" secondItem="6eh-bA-tAh" secondAttribute="leading" constant="44" id="ti1-kk-m3f"/>
+            </constraints>
+            <point key="canvasLocation" x="118.84057971014494" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="8" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -11,12 +11,25 @@
 		5E410B052664BC960003F8C0 /* VerifyPhonenumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E410B042664BC960003F8C0 /* VerifyPhonenumberViewController.swift */; };
 		5E410B552664F2040003F8C0 /* MemberInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E410B542664F2040003F8C0 /* MemberInfoViewController.swift */; };
 		5E76FC1226660DFA00BD5B0A /* LoyaltyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76FC1126660DFA00BD5B0A /* LoyaltyInfoViewController.swift */; };
+		5EB203A92667924000807769 /* AppListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB203A82667924000807769 /* AppListModule.swift */; };
+		5EB203B72667932100807769 /* AppListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB203B62667932100807769 /* AppListProtocols.swift */; };
+		5EB203BA2667932800807769 /* AppListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB203B92667932800807769 /* AppListPresenter.swift */; };
+		5EB203BF2667934000807769 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB203BD2667934000807769 /* AppListViewController.swift */; };
+		5EB203C02667934000807769 /* AppListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB203BE2667934000807769 /* AppListViewController.xib */; };
+		5EB20484266795DC00807769 /* MiniAppDemoConnectorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB20482266795DC00807769 /* MiniAppDemoConnectorSDK.framework */; };
+		5EB20485266795DC00807769 /* MiniAppDemoConnectorSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB20482266795DC00807769 /* MiniAppDemoConnectorSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EB20486266795DC00807769 /* MiniAppDemoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB20483266795DC00807769 /* MiniAppDemoSDK.framework */; };
+		5EB20487266795DC00807769 /* MiniAppDemoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB20483266795DC00807769 /* MiniAppDemoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EB2048C2667966E00807769 /* TripiFlightLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2048A2667966C00807769 /* TripiFlightLauncher.swift */; };
+		5EB20494266797E000807769 /* Pods_TerraFirstHands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */; };
+		5EB204962667986200807769 /* TripiHotelConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB2048B2667966E00807769 /* TripiHotelConnector.framework */; };
+		5EB204972667986200807769 /* TripiHotelConnector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB2048B2667966E00807769 /* TripiHotelConnector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EB2FEC8266772E200807769 /* TerraService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EB2FEC7266772E200807769 /* TerraService-Info.plist */; };
 		5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBECE85265F762700641C3E /* SplashViewController.swift */; };
 		5EFC19D52660C3730027B347 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC19D42660C3730027B347 /* PaymentViewController.swift */; };
 		5EFC1A142660C5D80027B347 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC1A132660C5D80027B347 /* Payment.swift */; };
 		5EFC1A182660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5EFC1A172660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle */; };
 		5EFC1A552660EB450027B347 /* LoyaltyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC1A542660EB450027B347 /* LoyaltyViewController.swift */; };
-		9F6DB95A32AD70F5B6A6400C /* Pods_TerraFirstHands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */; };
 		BC01BC64265CD2DB007800F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01BC63265CD2DB007800F4 /* AppDelegate.swift */; };
 		BC01BC6B265CD2DB007800F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC69265CD2DB007800F4 /* Main.storyboard */; };
 		BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC01BC6C265CD2EB007800F4 /* Assets.xcassets */; };
@@ -34,6 +47,22 @@
 		BCD63D86265CEFE000A490BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD63D85265CEFE000A490BE /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5EB20488266795DC00807769 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5EB204972667986200807769 /* TripiHotelConnector.framework in Embed Frameworks */,
+				5EB20485266795DC00807769 /* MiniAppDemoConnectorSDK.framework in Embed Frameworks */,
+				5EB20487266795DC00807769 /* MiniAppDemoSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraFirstHands.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E7023141DB6715DD77EBDC /* Pods-TerraFirstHands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraFirstHands.release.xcconfig"; path = "Target Support Files/Pods-TerraFirstHands/Pods-TerraFirstHands.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +70,16 @@
 		5E410B042664BC960003F8C0 /* VerifyPhonenumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhonenumberViewController.swift; sourceTree = "<group>"; };
 		5E410B542664F2040003F8C0 /* MemberInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInfoViewController.swift; sourceTree = "<group>"; };
 		5E76FC1126660DFA00BD5B0A /* LoyaltyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyInfoViewController.swift; sourceTree = "<group>"; };
+		5EB203A82667924000807769 /* AppListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListModule.swift; sourceTree = "<group>"; };
+		5EB203B62667932100807769 /* AppListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListProtocols.swift; sourceTree = "<group>"; };
+		5EB203B92667932800807769 /* AppListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListPresenter.swift; sourceTree = "<group>"; };
+		5EB203BD2667934000807769 /* AppListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
+		5EB203BE2667934000807769 /* AppListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppListViewController.xib; sourceTree = "<group>"; };
+		5EB20482266795DC00807769 /* MiniAppDemoConnectorSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiniAppDemoConnectorSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB20483266795DC00807769 /* MiniAppDemoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiniAppDemoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB2048A2667966C00807769 /* TripiFlightLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripiFlightLauncher.swift; sourceTree = "<group>"; };
+		5EB2048B2667966E00807769 /* TripiHotelConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TripiHotelConnector.framework; sourceTree = "<group>"; };
+		5EB2FEC7266772E200807769 /* TerraService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TerraService-Info.plist"; sourceTree = "<group>"; };
 		5EBECE85265F762700641C3E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5EFC19D42660C3730027B347 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		5EFC1A132660C5D80027B347 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
@@ -71,7 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6DB95A32AD70F5B6A6400C /* Pods_TerraFirstHands.framework in Frameworks */,
+				5EB204962667986200807769 /* TripiHotelConnector.framework in Frameworks */,
+				5EB20484266795DC00807769 /* MiniAppDemoConnectorSDK.framework in Frameworks */,
+				5EB20486266795DC00807769 /* MiniAppDemoSDK.framework in Frameworks */,
+				5EB20494266797E000807769 /* Pods_TerraFirstHands.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +145,51 @@
 				5E76FC1126660DFA00BD5B0A /* LoyaltyInfoViewController.swift */,
 			);
 			path = LoyaltyConsumerUI;
+			sourceTree = "<group>";
+		};
+		5EB2039A266791E100807769 /* AppList */ = {
+			isa = PBXGroup;
+			children = (
+				5EB203BC2667933900807769 /* View */,
+				5EB203A62667922000807769 /* Presenter */,
+				5EB203A52667921700807769 /* Constract */,
+				5EB203A82667924000807769 /* AppListModule.swift */,
+			);
+			path = AppList;
+			sourceTree = "<group>";
+		};
+		5EB203A52667921700807769 /* Constract */ = {
+			isa = PBXGroup;
+			children = (
+				5EB203B62667932100807769 /* AppListProtocols.swift */,
+			);
+			path = Constract;
+			sourceTree = "<group>";
+		};
+		5EB203A62667922000807769 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5EB203B92667932800807769 /* AppListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5EB203BC2667933900807769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EB203BD2667934000807769 /* AppListViewController.swift */,
+				5EB203BE2667934000807769 /* AppListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EB204892667965E00807769 /* Tripi */ = {
+			isa = PBXGroup;
+			children = (
+				5EB2048A2667966C00807769 /* TripiFlightLauncher.swift */,
+				5EB2048B2667966E00807769 /* TripiHotelConnector.framework */,
+			);
+			path = Tripi;
 			sourceTree = "<group>";
 		};
 		5EBECF58265FA35400641C3E /* Payment */ = {
@@ -159,6 +246,7 @@
 		BC01BC62265CD2DB007800F4 /* TerraFirstHands */ = {
 			isa = PBXGroup;
 			children = (
+				5EB204892667965E00807769 /* Tripi */,
 				5EFC1A162660E3050027B347 /* Libs */,
 				5EFC1A102660C5C70027B347 /* DataLayer */,
 				BC654B94265E536300C54301 /* Terra */,
@@ -180,6 +268,7 @@
 		BC654B78265E4DBA00C54301 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EB2039A266791E100807769 /* AppList */,
 				5E410A4C2664B6CE0003F8C0 /* LoyaltyConsumer */,
 				5EFC1A532660EB380027B347 /* Loyalty */,
 				5EBECF58265FA35400641C3E /* Payment */,
@@ -252,6 +341,7 @@
 		BCD63D81265CEF8000A490BE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5EB2FEC7266772E200807769 /* TerraService-Info.plist */,
 				BCD63D82265CEF9600A490BE /* AppRouter.swift */,
 				BC654B8E265E516200C54301 /* AlertUtils.swift */,
 			);
@@ -269,6 +359,8 @@
 		CFE5CE87E4EB15A1925BA0FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EB20482266795DC00807769 /* MiniAppDemoConnectorSDK.framework */,
+				5EB20483266795DC00807769 /* MiniAppDemoSDK.framework */,
 				504D4FB3DE03D5D00B87FB50 /* Pods_TerraFirstHands.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +379,7 @@
 				BC01BC5E265CD2DB007800F4 /* Resources */,
 				61D50D299FBB786FAD466BD4 /* [CP] Embed Pods Frameworks */,
 				946D5BC21A4FE361EE716A5F /* [CP] Copy Pods Resources */,
+				5EB20488266795DC00807769 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,7 +427,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB2FEC8266772E200807769 /* TerraService-Info.plist in Resources */,
 				5EFC1A182660E3100027B347 /* VnpayWalletSDKBundleResouce.bundle in Resources */,
+				5EB203C02667934000807769 /* AppListViewController.xib in Resources */,
 				BC01BC70265CD2EB007800F4 /* LaunchScreen.storyboard in Resources */,
 				BC01BC6D265CD2EB007800F4 /* Assets.xcassets in Resources */,
 				BC01BC6B265CD2DB007800F4 /* Main.storyboard in Resources */,
@@ -409,13 +504,17 @@
 			files = (
 				BC654B83265E507600C54301 /* SplashProtocols.swift in Sources */,
 				BC654B92265E525E00C54301 /* SplashPresenter.swift in Sources */,
+				5EB203BF2667934000807769 /* AppListViewController.swift in Sources */,
 				BC654B96265E538D00C54301 /* App.swift in Sources */,
 				5E410B052664BC960003F8C0 /* VerifyPhonenumberViewController.swift in Sources */,
 				5EFC1A552660EB450027B347 /* LoyaltyViewController.swift in Sources */,
 				BC654B7A265E4DD700C54301 /* LoginViewController.swift in Sources */,
 				5EFC1A142660C5D80027B347 /* Payment.swift in Sources */,
+				5EB2048C2667966E00807769 /* TripiFlightLauncher.swift in Sources */,
+				5EB203B72667932100807769 /* AppListProtocols.swift in Sources */,
 				BCD63D86265CEFE000A490BE /* FirstViewController.swift in Sources */,
 				5EBECE86265F762700641C3E /* SplashViewController.swift in Sources */,
+				5EB203A92667924000807769 /* AppListModule.swift in Sources */,
 				BC654B9C265E57F000C54301 /* WelcomeViewController.swift in Sources */,
 				5E410B552664F2040003F8C0 /* MemberInfoViewController.swift in Sources */,
 				5EFC19D52660C3730027B347 /* PaymentViewController.swift in Sources */,
@@ -425,6 +524,7 @@
 				BC654B86265E50CF00C54301 /* BaseViewController.swift in Sources */,
 				5E410A4E2664B6E10003F8C0 /* LoyaltyConsumerViewController.swift in Sources */,
 				BC654B8C265E512B00C54301 /* ViewProtocols.swift in Sources */,
+				5EB203BA2667932800807769 /* AppListPresenter.swift in Sources */,
 				BC01BC64265CD2DB007800F4 /* AppDelegate.swift in Sources */,
 				5E76FC1226660DFA00BD5B0A /* LoyaltyInfoViewController.swift in Sources */,
 			);
@@ -576,8 +676,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8J9GKDJ8T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TerraFirstHands/Tripi",
+				);
 				INFOPLIST_FILE = TerraFirstHands/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,6 +690,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -597,8 +702,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G8J9GKDJ8T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TerraFirstHands/Tripi",
+				);
 				INFOPLIST_FILE = TerraFirstHands/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +716,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

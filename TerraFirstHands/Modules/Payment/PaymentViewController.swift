@@ -206,7 +206,7 @@ extension PaymentViewController : AIOPaymentUIDelegate {
                         orderID: transaction.transactionCode,
                         referral: nil,
                         amount: transaction.amount,
-                        paymentMethod: TekoTracker.PaymentMethod.init(rawValue: transaction.methodType.name)!,
+                        paymentMethod: TekoTracker.PaymentMethod.cash,
                         status: EcommerceEventStatus.success))
             }
         case .failure(let error, let transactionResult):

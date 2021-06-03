@@ -1,0 +1,11 @@
+framework module TripiHotelConnector {
+  umbrella header "TripiHotelConnector.h"
+
+  export *
+  module * { export * }
+}
+
+module TripiHotelConnector.Swift {
+    header "TripiHotelConnector-Swift.h"
+    requires objc
+}
